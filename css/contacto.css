@@ -64,8 +64,8 @@ body
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 60vw;
-        height: 85vh;
+        width: 60%;
+        height: 85%;
         position: fixed;
         right: 20vw;
         border: 2px solid #00303f;
@@ -81,7 +81,7 @@ body
         text-align: center;
         width: 30%;
         border-bottom: 3px dashed #00303f;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .form form
@@ -110,7 +110,7 @@ body
     .form textarea
     {
         width: 90%;
-        height: 30%;
+        height: 15%;
         padding: 1%;
         border: 2px solid #00303f;
         border-radius: 20px;
@@ -159,8 +159,8 @@ body
             display: none;
             flex-direction: column;
             align-items: center;
-            width: 60vw;
-            height: 85vh;
+            width: 60%;
+            height: 85%;
             position: fixed;
             right: 20vw;
             border: 2px solid #00303f;
