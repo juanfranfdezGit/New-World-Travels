@@ -92,6 +92,12 @@ body
         border-bottom: 2px solid #00303f;
     }
 
+     .cajas div h2
+    {
+        color: #00303f;
+        position: absolute;
+    }
+
     .cajas div:nth-child(2)
     {
         left: 45%;
@@ -187,4 +193,8 @@ body
         justify-content: space-between;
         padding: 0 30px;
         font-size: .7em;
+        border-top: 1px solid #00303f;
+        position: fixed;
+        bottom: 0;
+        background: white;
     }

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(to top, white 70%, #00303f 95%) no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* MENU DE NAVEGACION */
+    nav
+    {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    nav ul
+    {
+        display: flex;
+        position: absolute;
+        right: 20px;
+    }
+
+    nav ul li
+    {
+        list-style-type: none;
+        margin-right: 25px;
+    }
+
+    nav a
+    {
+        text-decoration: none;
+        color: #dcae1d;
+        font-size: 1.2em;
+        transition: all .2s;
+    }
+
+    nav a:hover
+    {
+        color: #ffe281;
+    }
+
+    nav h1
+    {
+        margin-left: 20px;
+        font-size: 2em;
+    }
+
+/* FORMULARIO DE CONTACTO */
+    .form
+    {
+        color: #00303f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+        height: 85vh;
+        position: fixed;
+        right: 20vw;
+        border: 2px solid #00303f;
+        border-radius: 20px;
+        box-shadow: 2px 5px 10px black;
+        background: white;
+        padding: 2%;
+    }
+
+    .form h1
+    {
+        margin-bottom: 2%;
+        text-align: center;
+        width: 30%;
+        border-bottom: 3px dashed #00303f;
+        font-size: 2em;
+    }
+
+    .form form
+    {
+        width: 60%;
+    }
+
+    .form h2:not(:last-child)
+    {
+        margin-top: 2%; 
+        margin-left: 2%;
+    }
+
+    .form input
+    {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 90%;
+        padding: 1%;
+        border: 2px solid #00303f;
+        border-radius: 20px;
+        box-shadow: 1px 2px 5px black,
+                   inset 1px 1px 5px black;
+    }
+
+    .form textarea
+    {
+        width: 90%;
+        height: 30%;
+        padding: 1%;
+        border: 2px solid #00303f;
+        border-radius: 20px;
+        box-shadow: 1px 2px 5px black,
+                   inset 1px 1px 5px black;
+    }
+
+    .form .submit
+    {
+        width: 30%;
+        height: 6%;
+        border: 2px solid #00303f;
+        border-radius: 20px;
+        box-shadow: 1px 2px 5px black;
+        margin: 3% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    .form .submit:hover
+    {
+        cursor: pointer;
+        box-shadow: inset 1px 2px 5px black;
+    }
+
+     .form .submit:active
+    {
+        box-shadow: inset 1px 2px 5px black;
+    }
+
+    .form p
+    {
+        font-size: .8em;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1%;
+    }
+
+/* CUADRO CONSULTA ENVIADA */
+    .enviada
+    {
+            color: #00303f;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 60vw;
+            height: 85vh;
+            position: fixed;
+            right: 20vw;
+            border: 2px solid #00303f;
+            border-radius: 20px;
+            box-shadow: 2px 5px 10px black;
+            background: white;
+            padding: 2%;
+            font-size: 2em;
+            padding: 15%;
+    }
+
+    .enviada i
+    {
+        font-size: 3em;
+        margin-top: 3%;
+    }
+
+     .enviada i:hover
+    {
+        cursor: pointer;
+    }
+
+    .enviada i:active
+    {
+        color: #dcae1d;
+    }
+
+    .envia
+    {
+        display: flex;
+    }
+
+/* FOOTER */
+    footer
+    {
+        height: 3vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        font-size: .7em;
+        border-top: 1px solid #00303f;
+        position: fixed;
+        bottom: 0;
+    }

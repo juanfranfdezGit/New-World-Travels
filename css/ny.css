@@ -226,6 +226,11 @@ article p
     margin: 10px auto;
 }
 
+article ul
+{
+    padding-left: 18%;
+}
+
 .separador
 {
     margin-top: 1vh;
