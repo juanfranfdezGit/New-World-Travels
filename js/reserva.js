@@ -73,6 +73,7 @@ let meses = [
     }
 ];
 
+
 // DECLARAMOS CONSTANTES
 const mesActual = document.querySelector(".mesactual");
 const contenedorDias = document.querySelector(".dias");
@@ -83,28 +84,87 @@ let mesHoy = fecha.getMonth() + 1;
 let diaHoy = fecha.getDate() - 1;
 
 for(i = 1; i < meses.length; i++){
-    // ESCRIBE MES ACTUAL Y RECOGE LOS DIAS SEGUN DATOS EN JSON
-    let mes = meses[mesHoy]
-    let diasCont = mes.dias
-    mesActual.innerHTML = mes.nombre;
+        // ESCRIBE MES ACTUAL Y RECOGE LOS DIAS SEGUN DATOS EN JSON
+        let mes = meses[mesHoy]
+        let diasCont = mes.dias
+        mesActual.innerHTML = mes.nombre;
 
-    //BUCLE PARA CREAR DIAS Y COLOREAR EL ACTUAL
-    for(i = 0; i < diasCont.length; i++){
-        let dia = document.createElement("p");
-        let diaAct = diaHoy;
-        console.log(diaAct)
-        dia.innerHTML = diasCont[i];
-        contenedorDias.appendChild(dia);
-        if(i === diaAct){
-            dia.classList.add("diaHoy");
+        //BUCLE PARA CREAR DIAS 
+        for(i = 0; i < diasCont.length; i++){
+            let dia = document.createElement("p");
+            let diaAct = diaHoy;
+            console.log(diaAct)
+            dia.innerHTML = diasCont[i];
+            contenedorDias.appendChild(dia);
         }
     }
-}
 
-// INTERACCION CON EL DOM
-const start = document.querySelector(".start")
+// INTERACCION CON EL FORMULARIO
+const start = document.querySelectorAll(".start")
 const form = document.querySelector(".form")
+const tituloform = document.querySelector(".form h1")
+const formul = document.querySelector(".form form")
+const startDate = document.querySelector(".submit")
+const calendario = document.querySelector(".calendario")
 
-start.addEventListener("click", () => {
-    form.classList.add("form-activ");
+start.forEach(elem => {
+    elem.addEventListener("click", () => {
+        form.classList.add("form-activ")
+    })
 })
+
+startDate.addEventListener("click", function(){
+    tituloform.classList.add("formtitnone");
+    formul.classList.add("formtext-none");
+
+    calendario.classList.add("Act")
+})
+
+// CERRAR FORMULARIO
+const cerrar = document.querySelector(".cerrar")
+
+cerrar.addEventListener("click", () => {
+    form.classList.remove("form-activ")
+    tituloform.classList.remove("formtitnone");
+    formul.classList.remove("formtext-none");
+    calendario.classList.remove("Act")
+})
+
+// MES ANTERIOR Y POSTERIOR
+const posterior = document.querySelector(".pos");
+const anterior = document.querySelector(".ant");
+const diasCreated = document.querySelectorAll(".dias p");
+
+anterior.addEventListener("click", () => {
+
+
+})
+
+// FINALIZAR RESERVA
+const reservado = document.querySelector(".reservado")
+
+diasCreated.forEach(day => {
+        day.addEventListener("click", () => {
+        reservado.classList.add("activarRes")
+
+        form.classList.remove("form-activ")
+        tituloform.classList.remove("formtitnone");
+        formul.classList.remove("formtext-none");
+        calendario.classList.remove("Act")
+    })
+})
+
+// CERRAR MENSAJE
+const close = document.querySelector(".reservado i")
+
+close.addEventListener("click", () => {
+    reservado.classList.remove("activarRes")
+    form.classList.remove("form-activ")
+    tituloform.classList.remove("formtitnone");
+    formul.classList.remove("formtext-none");
+    calendario.classList.remove("Act")
+})
+
+
+
+

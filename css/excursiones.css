@@ -162,6 +162,25 @@ body
     }
 
 /* FORMULARIO DE RESERVA DE VIAJE */
+.cerrar
+{
+    position: absolute;
+    right: 2%;
+    right: 2%;
+    font-size: 2em;
+    color: #dcae1d;
+}
+
+.cerrar:hover
+{
+    cursor: pointer;
+}
+
+.cerrar:active
+{
+    color: white;
+}
+
 .form
 {
     color: #dcae1d;
@@ -183,7 +202,7 @@ body
 
 .form h1
 {
-    display: none;
+    display: block;
     font-size: 2.2em;
     margin: 1%;
     width: 70%;
@@ -191,18 +210,23 @@ body
     padding-left: 2%;
 }
 
+.formtitnone
+{
+    opacity: 0;
+}
+
 .form form
 {
     width: 100%;
     height: 100vh;
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2 , 1fr);
     grid-template-rows: repeat(5, 10%);
 }
 
-.formtext-activ
+.formtext-none
 {
-    display: grid;
+    opacity: 0;
 }
 
 .form h2
@@ -311,12 +335,42 @@ body
     font-size: 2em;
 }
 
+.calendario .ant:hover
+{
+    cursor: pointer;
+}
+
+.calendario .ante:active
+{
+    color: #dcae1d;
+}
+
+.antdesactiv
+{
+    font-size: 0;
+}
+
 .calendario .pos
 {
     position: absolute;
     top: 12%;
     right: 3%;
     font-size: 2em;
+}
+
+.calendario .pos:hover
+{
+    cursor: pointer;
+}
+
+.calendario .pos:active
+{
+    color: #dcae1d;
+}
+
+.posdesactiv
+{
+    font-size: 0;
 }
 
 .calendario .mesactual
@@ -341,6 +395,7 @@ body
 
 .calendario p
 {
+    position: relative;
     color: #dcae1d;
     margin: auto;
     width: 30%;
@@ -352,13 +407,6 @@ body
     border-radius: 50%;
     background-color: white;
     cursor: pointer;
-}
-
-.calendario .diaHoy
-{
-    border: #00303f;
-    border-radius: 50%;
-    background-color: white;
 }
 
 /* MENSAJE DE RESERVADO */
@@ -391,4 +439,9 @@ body
 .reservado i:active
 {
     color: #dcae1d;
+}
+
+.activarRes
+{
+    display: flex;
 }
