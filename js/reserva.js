@@ -92,8 +92,6 @@ for(i = 1; i < meses.length; i++){
         //BUCLE PARA CREAR DIAS 
         for(i = 0; i < diasCont.length; i++){
             let dia = document.createElement("p");
-            let diaAct = diaHoy;
-            console.log(diaAct)
             dia.innerHTML = diasCont[i];
             contenedorDias.appendChild(dia);
         }
@@ -136,8 +134,51 @@ const anterior = document.querySelector(".ant");
 const diasCreated = document.querySelectorAll(".dias p");
 
 anterior.addEventListener("click", () => {
+    for(i = 1; i < meses.length; i++){
+        // ESCRIBE MES ACTUAL Y RECOGE LOS DIAS SEGUN DATOS EN JSON
+        mesHoy--;
+        let mes = meses[mesHoy]
+        let diasCont = mes.dias
+        mesActual.innerHTML = mes.nombre;
 
+        //BORRAR DIAS ANTERIORES
+        for(i = 0; i < diasCont.length; i++){
+           let dia =document.querySelector(".dias p");
+            contenedorDias.removeChild(dia);
+        }
 
+        //BUCLE PARA CREAR DIAS 
+        for(i = 0; i < diasCont.length; i++){
+            let dia = document.createElement("p");
+            dia.innerHTML = diasCont[i];
+            contenedorDias.appendChild(dia);
+        }
+    }
+})
+
+posterior.addEventListener("click", () => {
+    for(i = 1; i < meses.length; i++){
+        // ESCRIBE MES ACTUAL Y RECOGE LOS DIAS SEGUN DATOS EN JSON
+        mesHoy++;
+        let mes = meses[mesHoy]
+        let diasCont = mes.dias
+        mesActual.innerHTML = mes.nombre;
+        console.log(mes.dias)
+
+        //BORRAR DIAS ANTERIORES
+        for(i = 0; i < diasCont.length; i++){
+            let dia =document.querySelector(".dias p");
+            contenedorDias.removeChild(dia);
+        }
+
+        //BUCLE PARA CREAR DIAS 
+        for(i = 0; i < diasCont.length; i++){
+            let dia = document.createElement("p");
+            dia.innerHTML = diasCont[i];
+            contenedorDias.appendChild(dia);
+            console.log(dia)
+        }
+    }
 })
 
 // FINALIZAR RESERVA

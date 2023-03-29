@@ -294,12 +294,12 @@ body
 /* MENSAJE DE RESERVADO */
 .reservado
 {
-    width: 80%;
-    height: 50%;
+    width: 60%;
+    height: 40%;
     background-color: white;
     position: absolute;
-    bottom: 5%;
-    left: 10%;
+    bottom: 25%;
+    left: 20%;
     display: none;
     justify-content: center;
     align-items: center;
