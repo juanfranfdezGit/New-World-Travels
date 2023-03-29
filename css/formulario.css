@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(to top, white 70%, #00303f 95%) no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* MENU DE NAVEGACION */
+    nav
+    {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    nav ul
+    {
+        display: flex;
+        position: absolute;
+        right: 20px;
+    }
+
+    nav ul li
+    {
+        list-style-type: none;
+        margin-right: 25px;
+    }
+
+    nav a
+    {
+        text-decoration: none;
+        color: #dcae1d;
+        font-size: 1.2em;
+        transition: all .2s;
+    }
+
+    nav a:hover
+    {
+        color: #ffe281;
+    }
+
+    nav h1
+    {
+        margin-left: 20px;
+        font-size: 2em;
+    }
+
+/* FORMULARIO DE RESERVA DE VIAJE */
+.cerrar
+{
+    position: absolute;
+    right: 2%;
+    right: 2%;
+    font-size: 2em;
+    color: #00303f;
+}
+
+.cerrar:hover
+{
+    cursor: pointer;
+}
+
+.cerrar:active
+{
+    color: white;
+}
+
+.form
+{
+    color: #00303f;
+    width: 80%;
+    height: 65%;
+    position: fixed;
+    border: 2px solid #00303f;
+    border-radius: 20px;
+    background: white;
+    padding: 2%;
+    bottom: 20%;
+    left: 10%;
+    display: block;
+}
+
+.form h1
+{
+    display: block;
+    font-size: 2.2em;
+    margin: 1%;
+    width: 70%;
+    border-bottom: 1px dashed #00303f;
+    padding-left: 2%;
+}
+
+.form form
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(5, 10%);
+}
+
+.form h2
+{
+    color: #00303f;
+    font-size: 1em;
+}
+
+.form h2:not(:last-child)
+{
+    font-size: 1.5em;
+    margin-top: 2%; 
+    margin-left: 2%;
+}
+
+.form input
+{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 60%;
+    padding: 1%;
+    border: 2px solid #00303f;
+    border-radius: 20px;
+}
+
+.form textarea
+{
+    width: 90%;
+    height: 90%;
+    padding: 1%;
+    border: 2px solid #00303f;
+    border-radius: 20px;
+}
+
+.form .submit
+{
+    width: 10%;
+    height: 10%;
+    border: 2px solid #00303f;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px black;
+    margin: 3% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: white;
+    position: absolute;
+    bottom: -3%;
+    left: 37%;
+}
+
+.form .submit:hover
+{
+    cursor: pointer;
+    box-shadow: inset 1px 2px 5px black;
+}
+
+ .form .submit:active
+{
+    box-shadow: inset 1px 2px 5px black;
+}
+
+.form div
+{
+    background: none;
+}
+
+/* CALENDARIO */
+.calendario
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 58%;
+    border: 4px solid #00303f;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px inset;
+    background: white;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    color: #dcae1d;
+}
+
+.Act
+{
+    display: flex;
+}
+
+.calendario h1
+{
+    position: absolute;
+    top: 2%;
+    border-bottom: 1px dashed #dcae1d;
+    width: 100%;
+    text-align: center;
+}
+
+.calendario .ant
+{
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    font-size: 2em;
+}
+
+.calendario .ant:hover
+{
+    cursor: pointer;
+}
+
+.calendario .ante:active
+{
+    color: #00303f;
+}
+
+.antdesactiv
+{
+    font-size: 0;
+}
+
+.calendario .pos
+{
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    font-size: 2em;
+}
+
+.calendario .pos:hover
+{
+    cursor: pointer;
+}
+
+.calendario .pos:active
+{
+    color: #dcae1d;
+}
+
+.posdesactiv
+{
+    font-size: 0;
+}
+
+.calendario .mesactual
+{
+    position: absolute;
+    top: 12%;
+    font-size: 2em;
+}
+
+.calendario .dias
+{
+    position: absolute;
+    top: 23%;
+    width: 95%;
+    height: 67%;
+    display: grid;
+    grid-template-columns: repeat(7, 14%);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #dcae1d;
+    text-align: center;
+}
+
+.calendario p
+{
+    position: relative;
+    color: #00303f;
+    margin: auto;
+    width: 30%;
+}
+
+.calendario P:hover
+{
+    border: #dcae1d;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* MENSAJE DE RESERVADO */
+.reservado
+{
+    width: 80%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #00303f;
+    border-radius: 20px;
+}
+
+.reservado i 
+{
+    font-size: 2em;
+}
+
+.reservado i:hover
+{
+    cursor: pointer;
+}
+
+.reservado i:active
+{
+    color: #00303f;
+}
+
+.activarRes
+{
+    display: flex;
+}
+
+/* FOOTER */
+    footer
+    {
+        height: 3vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        font-size: .7em;
+        border-top: 1px solid #dcae1d;
+        position: fixed;
+        bottom: 0;
+    }

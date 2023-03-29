@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NWT - Formulario</title>
+	<link rel="stylesheet" href="css/formulario.css">
+	<script src="https://kit.fontawesome.com/293524af89.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">New World Travels</a></h1>
+
+            <ul>
+                <li><a href="contain.html">Viajes</a></li>
+                <li><a href="excursiones.html">Excursiones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <section class="form"> 
+        <h3 class="cerrar">X</h3>     
+        <h1>Relleno los campos con sus datos</h1>    
+        <form>
+            <div class="name">
+                <h2>Nombre</h2>
+                <input type="text">
+            </div>
+
+            <div class="apellido">
+                <h2>Apellidos</h2>
+                <input type="text">
+            </div>
+
+            <div class="number">
+                <h2>Numero de Contacto</h2>
+                <input type="number">
+            </div>
+
+            <div class="mail">
+                <h2>E-mail</h2>
+                <input type="text">
+            </div>
+            
+            <div class="confirm">
+                <h2>Confirma tu E-mail</h2>
+                <input type="text">
+            </div>
+            
+            <div class="observ">
+                <h2>Observaciones</h2>
+                <textarea name="textarea" rows="30" cols="40"></textarea>
+            </div>
+
+            <div class="submit"><h2>Elegir Fecha</h2></div>
+        </form>
+    </section>
+
+    <section class="calendario">
+        <h1>Seleccione la fecha que desea</h1>
+        <h2 class="ant">&lt;</h2>
+        <h2 class="mesactual"></h2>
+        <h2 class="pos">&gt;</h2>
+        <div class="dias"></div>
+    </section>
+
+    <section class="reservado">
+        <h1>Reserva completada, nos pondremos en contacto con usted enseguida<br><i class="fa-solid fa-check"></i></h1>
+    </section>
+
+    <footer>
+        <h2>Copyright © 2023 New World Travels S.A. Reservados todos los derechos.</h2>
+        <h2>España</h2>
+    </footer>
+
+<script src="js/reserva.js"></script>
+</body>
+</html>
