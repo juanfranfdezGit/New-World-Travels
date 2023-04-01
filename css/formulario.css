@@ -145,7 +145,7 @@ body
 
 .form .submit
 {
-    width: 10%;
+    width: 12%;
     height: 10%;
     border: 2px solid #00303f;
     border-radius: 20px;
@@ -200,6 +200,13 @@ body
     display: flex;
 }
 
+.diaHoy
+{
+    border: #dcae1d;
+    border-radius: 50%;
+    background-color: white;
+}
+
 .calendario h1
 {
     position: absolute;
@@ -225,11 +232,6 @@ body
 .calendario .ante:active
 {
     color: #00303f;
-}
-
-.antdesactiv
-{
-    font-size: 0;
 }
 
 .calendario .pos
