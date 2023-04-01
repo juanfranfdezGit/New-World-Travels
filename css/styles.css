@@ -68,161 +68,178 @@ header
     z-index: 10;
 }
 
-/* TITULO PORTADA */
-#parallax h2
-{
-    position: absolute;
-    color: #dcae1d;
-    font-size: 10vw;
-    bottom: -20%;
-    text-align: center;
-}
+    /* TITULO PORTADA */
+    #parallax h2
+    {
+        position: absolute;
+        color: #dcae1d;
+        font-size: 10vw;
+        bottom: -20%;
+        text-align: center;
+    }
 
-#parallax h2 .a, 
-#parallax h2 .s
-{
+    #parallax h2 .a, 
+    #parallax h2 .s
+    {
+        position: relative;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 12vw;
+        letter-spacing: -4px;
+    }
+
+    #parallax h2 span
+    {
     position: relative;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 12vw;
-    letter-spacing: -4px;
-}
+        font-family: 'Rubik', sans-serif;
+    font-size: .2em;
+    letter-spacing: 3px;
+    font-weight: 400;
+    }
 
-#parallax h2 span
-{
-   position: relative;
-    font-family: 'Rubik', sans-serif;
-   font-size: .2em;
-   letter-spacing: 3px;
-   font-weight: 400;
-}
+    /* TITULO PORTADA */
 
-/* TITULO PORTADA */
+    /* INFO PAGINA */
+    .info-portada
+    {
 
-/* INFO PAGINA */
-.info-portada
-{
+        padding: 100px;
+        background: #00303f;
+        color: white;
+        overflow: hidden;
+    }
 
-    padding: 100px;
-    background: #00303f;
-    color: white;
-    overflow: hidden;
-}
+    .info-portada h2
+    {
+        border-bottom: 2px solid #dcae1d;
+        color: #dcae1d;
+        font-size: 2.5em;
+        padding-left: 3vw;
+        margin-bottom: 10px;
+    }
 
-.info-portada h2
-{
-    border-bottom: 2px solid #dcae1d;
-    color: #dcae1d;
-    font-size: 2.5em;
-    padding-left: 3vw;
-    margin-bottom: 10px;
-}
+    .info-portada p
+    {
+        margin-bottom: 10px;
+        padding: 5px 15px;
+    }
 
-.info-portada p
-{
-    margin-bottom: 10px;
-    padding: 5px 15px;
-}
+    .info-portada span
+    {
+        font-size: 1.2em;
+        border-bottom: 1px solid #dcae1d;
+    }
+    /* INFO PAGINA */
 
-.info-portada span
-{
-    font-size: 1.2em;
-    border-bottom: 1px solid #dcae1d;
-}
-/* INFO PAGINA */
+    /* ENLACE BOTTOM */
+    .enlace
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: -260px;
+        width: 80vw;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #dcae1d;
+        transition: transform 1s;
+    }
 
-/* ENLACE BOTTOM */
-.enlace
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: -260px;
-    width: 80vw;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #dcae1d;
-    transition: transform 1s;
-}
+    .enlace .abrir-cerrar
+    {
+        position: relative;
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        top: -50px;
+        color: #00303f;
+        transform: rotate(270deg);
+        transition: all 1s;
+    }
 
-.enlace .abrir-cerrar
-{
-    position: relative;
-    font-size: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 900;
-    top: -50px;
-    color: #00303f;
-    transform: rotate(270deg);
-    transition: all 1s;
-}
+    .enlace a
+    {
+        position: relative;
+        font-size: 2em;
+        top: -70px;
+        color: #00303f;
+        text-decoration: none;
+    }
 
-.enlace a
-{
-    position: relative;
-    font-size: 2em;
-    top: -70px;
-    color: #00303f;
-    text-decoration: none;
-}
+    .enlace:hover
+    {
+        transform: translateY(-60px);
+    }
 
-.enlace:hover
-{
-    transform: translateY(-60px);
-}
+    .enlace:hover .abrir-cerrar
+    {
+        transform: rotate(90deg);
+    } 
+    /* ENLACE BOTTOM */
 
-.enlace:hover .abrir-cerrar
-{
-    transform: rotate(90deg);
-} 
-/* ENLACE BOTTOM */
+    /* IMAGENES DE PARALLAX */
+    #parallax img
+    {
+        position: absolute;
+        object-fit: cover;
+    }
 
-/* IMAGENES DE PARALLAX */
-#parallax img
-{
-    position: absolute;
-    object-fit: cover;
-}
+    #avion
+    {
+        width: 8vw;
+        top: 60vh;
+        left: 14vw;
+        z-index: -1;
+    }
 
-#avion
-{
-    width: 8vw;
-    top: 60vh;
-    left: 14vw;
-    z-index: -1;
-}
+    #skyline
+    {
+        width: 100vw;
+        bottom: 0;
+        z-index: 5;
+    }
 
-#skyline
-{
-    width: 100vw;
-    bottom: 0;
-    z-index: 5;
-}
+    #coliseo
+    {
+        width: 35vw;
+        z-index: -1;
+        left: 5vw;
+        bottom: 3%;
+    }
 
-#coliseo
-{
-    width: 35vw;
-    z-index: -1;
-    left: 5vw;
-    bottom: 3%;
-}
+    #eiffel
+    {
+        width: 17vw;
+        z-index: -1;
+        left: 40vw;
+        bottom: 0;
+    }
 
-#eiffel
-{
-    width: 17vw;
-    z-index: -1;
-    left: 40vw;
-    bottom: 0;
-}
-
-#bigben
-{
-    width: 40vw;
-    z-index: -3;
-    right: 5vw;
-    bottom: 0;
-}
-/* IMAGENES DE PARALLAX */
+    #bigben
+    {
+        width: 40vw;
+        z-index: -3;
+        right: 5vw;
+        bottom: 0;
+    }
+    /* IMAGENES DE PARALLAX */
 
 /* PARALLAX EFECT */
+
+/* MEDIAQUERYS */
+@media (max-width: 1080px) {
+    .logo 
+    {
+        font-size: 5em;
+    }
+
+    #parallax
+    {
+        position: relative;
+        min-height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

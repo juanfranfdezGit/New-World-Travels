@@ -58,6 +58,7 @@ nav ul
     display: flex;
     position: absolute;
     right: 3%;
+    top: 5%;
 }
 
 nav ul li
@@ -256,3 +257,87 @@ nav a:hover
     margin: auto;
     font-size: .9em;
 }
+
+/* MEDIAQUERYS */
+@media (max-width: 1080px) {
+    /* CONTENIDO */
+    .info-design
+    {
+        height: 180vh;
+    }
+
+    .info
+    {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 17%;
+        left: 20%;
+        width: 40%;
+        height: 40%;
+    }
+     
+     .info p
+     {
+         font-size: .7em;
+     }
+ 
+     .info ul 
+     {
+         font-size: .7em;
+     }
+ 
+     .info h2
+     {
+         font-size: .8em;
+         padding-bottom: 0;
+     }
+     .info h1
+     {
+         font-size: 1em;
+     }
+ 
+     .info h1 span
+     {
+         font-size: 1.1em;
+     }
+ 
+     nav a
+     {
+         font-size: 1.1em;
+     }
+ 
+     /* GALERIA */
+     .galeria
+     {
+         width: 5%;
+         height: 7%;
+         left: 22%;
+     }
+ 
+     .galeria-grid
+     {
+         width: 50%;
+         height: 50%;
+         margin: 15% 5%;
+     }
+ 
+     /* CONTRATAR */
+     .contratar
+     {
+         left: 2%;
+         bottom: 8%;
+         width: 18%;
+         height: 7%;
+     }
+ 
+     .contratar a 
+     {
+         margin-top: 8%;
+     }
+
+     /* NAV */
+     nav ul
+    {
+        top: 80%;
+    }
+ }
