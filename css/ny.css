@@ -246,7 +246,7 @@ article ul
 }
 
 /* MEDIAQUERYS */
-@media (max-width: 1080px) {
+@media (max-width: 1620px) {
     /* CONTENIDO */
      .info
      {
@@ -303,4 +303,66 @@ article ul
      {
          width: 18%;
      }
+ }
+
+ 
+@media (max-width: 840px) {
+    /* CONTENIDO */
+    .info
+    {
+       width: 100vw;
+       height: 50vh;
+    }
+    
+    .info p
+    {
+       font-size: .7em;
+    }
+
+    .info ul 
+    {
+        font-size: .7em;
+    }
+
+    .info h2
+    {
+        font-size: .8em;
+        padding-bottom: 0;
+    }
+    .info h1
+    {
+        font-size: 1em;
+    }
+
+    .info h1 span
+    {
+        font-size: 1.1em;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    /* GALERIA */
+    .galeria-grid
+    {
+        width: 95%;
+        height: 20%;
+        top: 13%;
+    }
+
+   .galeria
+   {
+       right: 29%;
+       width: 8%;
+       height: 6%;
+   }
+
+    /* CONTRATAR */
+    .contratar
+    {
+        height: 6%;
+        width: 22%;
+    }
  }

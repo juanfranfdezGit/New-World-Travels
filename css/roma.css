@@ -259,36 +259,37 @@ nav a:hover
 }
 
 /* MEDIAQUERYS */
-@media (max-width: 1080px) {
+@media (max-width: 1620px) {
     /* CONTENIDO */
     .info-design
     {
-        height: 180vh;
+        height: 100vh;
+        transform: rotate(0deg);
     }
 
     .info
     {
-        transform: rotate(-45deg);
+        transform: rotate(0deg);
         position: absolute;
         top: 17%;
         left: 20%;
-        width: 40%;
-        height: 40%;
+        width: 50%;
+        height: 80%;
     }
      
      .info p
      {
-         font-size: .7em;
+         font-size: 1em;
      }
  
      .info ul 
      {
-         font-size: .7em;
+         font-size: .9em;
      }
  
      .info h2
      {
-         font-size: .8em;
+         font-size: 1.2em;
          padding-bottom: 0;
      }
      .info h1
@@ -309,25 +310,26 @@ nav a:hover
      /* GALERIA */
      .galeria
      {
-         width: 5%;
+         width: 6%;
          height: 7%;
          left: 22%;
      }
- 
+
      .galeria-grid
      {
-         width: 50%;
-         height: 50%;
-         margin: 15% 5%;
+        width: 40%;
+        height: 70%;
+        grid-template: 1fr 1fr 1fr / 1fr;
+        top: 6%;
      }
- 
+
      /* CONTRATAR */
      .contratar
      {
-         left: 2%;
-         bottom: 8%;
-         width: 18%;
-         height: 7%;
+        left: 2%;
+        bottom: 8%;
+        width: 18%;
+        height: 7%;
      }
  
      .contratar a 
@@ -340,4 +342,68 @@ nav a:hover
     {
         top: 80%;
     }
+ }
+
+ 
+@media (max-width: 840px) {
+    .container::after
+    {
+        height: 100vh;
+    }
+    
+    /* CONTENIDO */
+    .info
+    {
+        transform: rotate(0deg);
+        position: absolute;
+        top: 17%;
+        left: 10%;
+        width: 65%;
+        height: 80%;
+    }
+     
+     .info p
+     {
+         font-size: .9em;
+     }
+ 
+     .info ul 
+     {
+        margin-top: 1%;
+         font-size: .8em;
+     }
+ 
+     nav a
+     {
+         font-size: 1.4em;
+     }
+ 
+     /* GALERIA */
+     .galeria
+     {
+         width: 10%;
+         height: 7%;
+         left: 30%;
+     }
+ 
+     .galeria-grid
+     {
+         width: 40%;
+         height: 60%;
+         grid-template: 1fr 1fr 1fr 1fr / 1fr;
+         top: 8%;
+     }
+     /* CONTRATAR */
+     .contratar
+     {
+         left: 3%;
+         bottom: 8%;
+         width: 25%;
+         height: 7%;
+     }
+ 
+     .contratar a 
+     {
+         margin-top: 23%;
+     }
  }

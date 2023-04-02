@@ -446,7 +446,7 @@ body
     display: flex;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1620px) {
     /* CONTENIDO DE LOS DIV */
     div img
     {
@@ -504,5 +504,18 @@ body
     {
         width: 55%;
         height: 50%;
+    }
+}
+
+@media (max-width: 840px) {
+    div img
+    {
+        width: 85%;
+        height: 30%;
+    }
+
+    .titulo 
+    {
+        font-size: .8em;
     }
 }

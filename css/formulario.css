@@ -345,7 +345,7 @@ body
         bottom: 0;
     }
 
-@media (min-width: 1080px) {
+@media (max-width: 1620px) {
         footer
         {
             font-size: .5em;

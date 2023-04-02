@@ -201,7 +201,7 @@ body
 
     
 /* MEDIAQUERYS */
-    @media (min-width: 1080px) {
+    @media (max-width: 1620px) {
         .cajas div
         {
             width: 32%;

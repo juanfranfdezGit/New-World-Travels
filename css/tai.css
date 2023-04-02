@@ -246,7 +246,7 @@ nav a:hover
 }
 
 /* MEDIAQUERYS */
-@media (max-width: 1080px) {
+@media (max-width: 1620px) {
    /* CONTENIDO */
     .info
     {
@@ -295,7 +295,6 @@ nav a:hover
     {
         width: 50%;
         height: 50%;
-        margin: 15% 5%;
     }
 
     /* CONTRATAR */
@@ -312,3 +311,61 @@ nav a:hover
         margin-top: 8%;
     }
 }
+
+@media (max-width: 840px) {
+    .container::after
+    {
+        height: 100vh;
+    }
+    
+    /* CONTENIDO */
+     .info
+     {
+         width: 50vw;
+     }
+     
+     .info p
+     {
+         font-size: .9em;
+     }
+ 
+     .info ul 
+     {
+        margin-top: 1%;
+         font-size: .8em;
+     }
+ 
+     nav a
+     {
+         font-size: 1.4em;
+     }
+ 
+     /* GALERIA */
+     .galeria
+     {
+         width: 10%;
+         height: 7%;
+         left: 30%;
+     }
+ 
+     .galeria-grid
+     {
+         width: 40%;
+         height: 60%;
+         grid-template: 1fr 1fr 1fr 1fr / 1fr;
+         top: 8%;
+     }
+     /* CONTRATAR */
+     .contratar
+     {
+         left: 3%;
+         bottom: 8%;
+         width: 25%;
+         height: 7%;
+     }
+ 
+     .contratar a 
+     {
+         margin-top: 23%;
+     }
+ }

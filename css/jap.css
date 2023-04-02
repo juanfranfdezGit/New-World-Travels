@@ -248,7 +248,7 @@ nav a:hover
 }
 
 /* MEDIAQUERYS */
-@media (max-width: 1080px) {
+@media (max-width: 1620px) {
     /* CONTENIDO */
      .info
      {
@@ -307,3 +307,69 @@ nav a:hover
          width: 18%;
      }
  }
+
+ @media (max-width: 840px) {
+    .container::after
+    {
+        height: 100vh;
+    }
+
+     /* CONTENIDO */
+     .info
+     {
+        width: 45vw;
+        height: 100vh;
+     }
+     
+     .info p
+     {
+        font-size: .7em;
+     }
+ 
+     .info ul 
+     {
+         font-size: .7em;
+     }
+ 
+     .info h2
+     {
+         font-size: .8em;
+         padding-bottom: 0;
+     }
+     .info h1
+     {
+         font-size: 1em;
+     }
+ 
+     .info h1 span
+     {
+         font-size: 1.1em;
+     }
+ 
+     nav a
+     {
+         font-size: 1.1em;
+     }
+ 
+     /* GALERIA */
+     .galeria-grid
+     {
+         width: 45%;
+         height: 60%;
+         grid-template: 1fr 1fr 1fr 1fr / 1fr;
+     }
+
+    .galeria
+    {
+        right: 32%;
+        width: 8%;
+        height: 6%;
+    }
+
+     /* CONTRATAR */
+     .contratar
+     {
+         width: 24%;
+         height: 6%;
+     }
+}
