@@ -207,3 +207,23 @@ body
         position: fixed;
         bottom: 0;
     }
+
+
+@media (max-width: 1080px) {
+    footer
+    {
+        font-size: .5em;
+    }
+
+    /* FORMULARIO DE CONTACTO */
+    .form
+    {
+        height: 80%;
+    }
+
+    .form .submit
+    {
+        width: 39%;
+        font-size: 1.3em;
+    }
+}

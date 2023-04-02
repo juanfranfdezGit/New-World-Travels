@@ -344,3 +344,18 @@ body
         position: fixed;
         bottom: 0;
     }
+
+@media (min-width: 1080px) {
+        footer
+        {
+            font-size: .5em;
+        }
+    
+        /* FORMULARIO DE CONTACTO */
+    
+        .form .submit
+        {
+            width: 20%;
+            font-size: 1.3em;
+        }
+    }
