@@ -258,6 +258,7 @@ header
         margin-top: 25%;
         text-align: center;
         text-shadow: 9px 7px 6px #dcae1d;
+        letter-spacing: 5px;
     }
 
     #parallax h2
@@ -278,6 +279,7 @@ header
 
     .enlace 
     {
+        text-align: center;
         bottom: -50px;
         padding-top: 25%;
     }
