@@ -257,6 +257,29 @@ header
         border-bottom: none;
         margin-top: 25%;
         text-align: center;
+        text-shadow: 9px 7px 6px #dcae1d;
+    }
+
+    #parallax h2
+    {
+        font-size: 16vw;
+    }
+
+    #parallax h2 .a, #parallax h2 .s
+    {
+        font-size: 18vw;
+    }
+
+    .info-portada
+    {
+        width: 130%;
+        margin: auto -13%;
+    }
+
+    .enlace 
+    {
+        bottom: -50px;
+        padding-top: 25%;
     }
 
 }
