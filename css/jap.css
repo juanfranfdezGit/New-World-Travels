@@ -373,3 +373,83 @@ nav a:hover
          height: 6%;
      }
 }
+
+@media (max-width: 420px) 
+{
+    .container
+    {
+        position: relative;
+        width: 100vw;
+        height: 160vh;
+        background: #00303f;
+    }
+    
+    .container::after
+    {
+        display: none;
+    }
+    
+    /* LOGO */
+    .titulo
+    {
+        margin: 20px;
+        font-size: 1.2em;
+    }
+    
+    /* NAV */
+    nav a
+    {
+        font-size: 1.2em;
+    }
+    
+    /* CONTRATAR */
+    .contratar
+    {
+        right: 5%;
+        bottom: 5%;
+        width: 50%;
+        height: 5%;
+    }
+
+    .contratar a
+    {
+        margin-top: 3%;
+    }
+    
+    /* BOTON PARA ACTIVAR GALERIA */
+    .galeria
+    {
+        right: 59%;
+        bottom: 5%;
+        width: 15%;
+        height: 5%;
+    }
+
+    /* GALERIA */
+    .galeria-grid
+    {
+        width: 70%;
+        height: 65%;
+        margin: -10% 7%;
+    }
+    
+    .galeria-grid img
+    {
+        margin: 3%;
+    }
+    
+    .activo
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* INFO */
+    .info
+    {
+        width: 100vw;
+        position: relative;
+        background-color: #00303f;
+    }
+    
+}

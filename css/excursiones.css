@@ -31,7 +31,7 @@ body
 {
     content: "";
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     display: block;
     position: absolute;
     top: 0;
@@ -518,4 +518,129 @@ body
     {
         font-size: .8em;
     }
+}
+
+@media (max-width: 420px)
+{
+    nav
+    {
+        border-bottom: 2px solid #dcae1d;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #00303f;
+        height: 300vh;
+        top: 0;
+        overflow: hidden;
+    }
+
+    /* CONTENIDO */
+        .container div:first-child
+        {
+            font-size: .7em;
+            display: flex;
+            flex-direction: column;
+            width: 150%;
+            height: 8%;
+            margin: 18% 7%;
+        }
+
+        .container div:first-child h3
+        {
+            font-size: 1.6em;
+        }
+
+        div
+        {
+            width: 95%;
+        }
+
+        /* CONTENIDO DE LOS DIV */
+            div img
+            {
+                height: 40%;
+            }
+
+            div h1
+            {
+                position: relative;
+                bottom: -5%;
+                width: 30%;
+                height: 10%;
+            }
+
+            div h1:hover
+            {
+                cursor: pointer;
+            }
+
+            div h1:active
+            {
+                color: white;
+            }
+
+        /* FORMULARIO DE RESERVA DE VIAJE */
+        .cerrar
+        {
+            font-size: 1.5em;
+        }
+
+        .form
+        {
+            height: 95%;
+            background: rgba(0, 0, 0, 1);
+            z-index: 3;
+        }
+
+        .form h1
+        {
+            font-size: 1.5em;
+        }
+
+        .form form
+        {
+            grid-template-columns: repeat(1 , 1fr);
+            grid-template-rows: repeat(8, 10%);
+        }
+
+        .form h2:not(:last-child)
+        {
+            font-size: 1em;
+        }
+
+        .form .submit
+        {
+            width: 20%;
+            bottom: 2%;
+        }
+
+        /* CALENDARIO */
+        .calendario
+        {
+            width: 90%;
+            height: 68%;
+            left: 5%;
+            z-index: 4;
+            position: fixed;
+        }
+
+        .calendario h1
+        {
+            position: absolute;
+            top: 2%;
+            border-bottom: 1px dashed #00303f;
+            width: 100%;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        /* MENSAJE DE RESERVADO */
+        .reservado
+        {
+            z-index: 4;
+        }
 }

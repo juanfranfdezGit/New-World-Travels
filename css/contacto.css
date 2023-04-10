@@ -84,6 +84,11 @@ body
         font-size: 1.5em;
     }
 
+    .form h2
+    {
+        color: #00303f;
+    }
+
     .form form
     {
         width: 60%;
@@ -225,5 +230,98 @@ body
     {
         width: 39%;
         font-size: 1.3em;
+    }
+}
+
+@media (max-width: 420px) {
+    /* MENU DE NAVEGACION */
+    nav
+    {
+        padding-top: 10%;
+        height: 25vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul
+    {
+        right: 10%;
+        top: 50%;
+    }
+
+    nav a
+    {
+        font-size: 1em;
+    }
+
+    nav a:hover
+    {
+        color: #ffe281;
+    }
+
+    nav h1
+    {
+        font-size: 1.7em;
+        margin: 0 auto;
+    }
+
+    /* FORMULARIO DE CONTACTO */
+    .form
+    {
+        width: 80%;
+        height: 65%;
+        position: fixed;
+        right: 10vw;
+        font-size: 1em;
+    }
+
+    .form h1
+    {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    
+    .form h2
+    {
+        font-size: 1em;
+    }
+
+
+    .form textarea
+    {
+        height: 8%;
+    }
+
+    .form .submit
+    {
+        width: 50%;
+    }
+
+    .form p
+    {
+        font-size: .6em;
+        margin: 2%;
+    }
+
+    /* CUADRO CONSULTA ENVIADA */
+    .enviada
+    {
+        width: 60%;
+        height: 55%;
+        font-size: 1.3em;
+    }
+
+    .enviada i
+    {
+        font-size: 1.5em;
+        margin-top: 3%;
+    }
+
+    /* FOOTER */
+    footer
+    {
+        height: 4vh;
+        font-size: .32em;
     }
 }

@@ -359,3 +359,107 @@ body
             font-size: 1.3em;
         }
     }
+
+    @media (max-width: 420px) 
+    {
+        /* MENU DE NAVEGACION */
+        nav
+        {
+            padding-top: 10%;
+            height: 25vh;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul
+        {
+            right: 10%;
+            top: 50%;
+        }
+
+        nav a
+        {
+            font-size: 1em;
+        }
+
+        nav a:hover
+        {
+            color: #ffe281;
+        }
+
+        nav h1
+        {
+            font-size: 1.7em;
+            margin: 0 auto;
+        }
+        
+    /* FORMULARIO DE RESERVA DE VIAJE */
+        .cerrar
+        {
+            font-size: 1.6em;
+        }
+
+        .form
+        {
+            height: 75%;
+            bottom: 5%;
+        }
+
+        .form h1
+        {
+            font-size: 1.2em;
+        }
+
+        .form form
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form h2
+        {
+            color: #00303f;
+            font-size: .8em;
+        }
+
+        .form h2:not(:last-child)
+        {
+            font-size: .9em;
+        }
+
+        .form textarea
+        {
+            height: 12%;
+        }
+
+        .form .submit
+        {
+            text-align: center;
+            width: 25%;
+            height: 12%;
+            margin: 8% auto;
+            font-size: 1.3em;
+        }
+
+        /* CALENDARIO */
+        .calendario
+        {
+            width: 80%;
+            height: 58%;
+            bottom: 15%;
+            left: 10%;
+        }
+
+        .calendario h1
+        {
+           font-size: 1em;
+        }
+
+        /* FOOTER */
+        footer
+        {
+            height: 4vh;
+            font-size: .32em;
+        }
+    }

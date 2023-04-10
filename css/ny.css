@@ -366,3 +366,84 @@ article ul
         width: 22%;
     }
  }
+
+  
+@media (max-width: 420px) 
+{
+
+    .container
+    {
+        height: 200vh;
+        background: #00303f;
+        position: absolute;
+    }
+    
+    .container::after
+    {
+        display: none;
+    }
+    
+    /* LOGO */
+    .titulo
+    {
+        font-size: 1em;
+    }
+    
+    /* NAV */
+    nav
+    {
+        margin-top: 5px;
+    }
+    
+    /* CONTRATAR */
+    .contratar
+    {
+        right: 27%;
+        top: 90%;
+        width: 50%;
+        height: 5%;
+    }
+    
+    /* BOTON PARA ACTIVAR GALERIA */
+    .galeria
+    {
+        right: 80%;
+        top: 90%;
+        width: 15%;
+        height: 5%;
+    }
+    
+    /* GALERIA */
+    .galeria-grid
+    {
+        display: none;
+        width: 78%;
+        height: 23%;
+        margin: 0 5%;
+        z-index: 10;
+        position: fixed;
+    }
+
+    .galeria-grid img
+    {
+        margin: 3%;
+    }
+    
+    .activo
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* INFO */
+    .info
+    {
+        height: 85vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #00303f;
+    }
+
+}
