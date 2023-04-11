@@ -300,6 +300,16 @@ body
                 left: 0;
             }
 
+            .cajas div p
+            {
+                font-size: .7em;
+            }
+    
+            .cajas div h2
+            {
+               font-size: .9em;
+            }
+
         /* STIKERS BACKGROUND */
             .stiker
             {

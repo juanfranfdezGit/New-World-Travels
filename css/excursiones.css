@@ -507,6 +507,20 @@ body
     }
 }
 
+@media (max-width: 1220px) 
+{
+    .container div:first-child
+    {
+        font-size: .6em;
+    }
+
+    div img
+    {
+        width: 70%;
+        height: 30%;
+    }
+}
+
 @media (max-width: 840px) {
     div img
     {

@@ -396,7 +396,7 @@ body
     /* FORMULARIO DE RESERVA DE VIAJE */
         .cerrar
         {
-            font-size: 1.6em;
+            font-size: 1.2em;
         }
 
         .form
@@ -407,7 +407,7 @@ body
 
         .form h1
         {
-            font-size: 1.2em;
+            font-size: .7em;
         }
 
         .form form
@@ -420,12 +420,12 @@ body
         .form h2
         {
             color: #00303f;
-            font-size: .8em;
+            font-size: .6em;
         }
 
         .form h2:not(:last-child)
         {
-            font-size: .9em;
+            font-size: .7em;
         }
 
         .form textarea

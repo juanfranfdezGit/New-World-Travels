@@ -300,8 +300,7 @@ body
 
     .form p
     {
-        font-size: .6em;
-        margin: 2%;
+        font-size: 0;
     }
 
     /* CUADRO CONSULTA ENVIADA */
