@@ -243,14 +243,7 @@ header
     }
 }
 
-@media (max-width: 620px) {
-    .logo 
-    {
-        font-size: 3em;
-    }
-}
-
-@media (max-width: 770px) {
+@media (max-width: 800px) {
     .logo 
     {
         font-size: 5em;
