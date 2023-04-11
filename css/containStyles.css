@@ -230,6 +230,111 @@ body
         }
     }
 
+    @media (max-width: 770px) 
+    {
+
+        /* MENU DE NAVEGACION */
+            nav
+            {
+                padding-top: 10%;
+                height: 25vh;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul
+            {
+                right: 30%;
+                top: 50%;
+            }
+
+            nav a
+            {
+                font-size: 1em;
+            }
+
+            nav a:hover
+            {
+                color: #ffe281;
+            }
+
+            nav h1
+            {
+                font-size: 2.5em;
+                margin: 0 auto;
+            }
+
+        /* CAJAS DE ENLACE A LOS VIAJES */
+            .cajas
+            {
+                height: 130vh;
+                width: 100vw;
+                margin-top: -10%;
+                padding-bottom: 25%;
+            }
+
+            .cajas div
+            {
+                width: 60%;
+                height: 25%;
+                flex-direction: column;
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 3% auto;
+            }
+
+            .cajas div:nth-child(2)
+            {
+                left: 0;
+            }
+
+            .cajas div:nth-child(3)
+            {
+                top: 0;
+            }
+
+            .cajas div:nth-child(4)
+            {
+                top: 0;
+                left: 0;
+            }
+
+            .cajas div p
+            {
+                font-size: .7em;
+            }
+    
+            .cajas div h2
+            {
+               font-size: .9em;
+            }
+
+        /* STIKERS BACKGROUND */
+            .stiker
+            {
+                width: 100px;
+                height: 100px;
+            }
+
+            .stik02
+            {
+                right: 85%;
+            }
+
+        /* FOOTER */
+            footer
+            {
+                height: 4vh;
+                font-size: .32em;
+                padding: 0 20px;
+                bottom: 0;
+                position: relative;
+                background: transparent;
+            }
+
+    }
+
     @media (max-width: 420px) 
     {
 

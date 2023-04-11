@@ -22,7 +22,7 @@
 {
     content: "";
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     display: block;
     position: absolute;
     top: 0;
@@ -366,6 +366,88 @@ article ul
         width: 22%;
     }
  }
+
+@media (max-width: 770px) 
+{
+    .info
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 60%;
+    }
+    
+    article
+    {
+        width: 48%;
+        height: 12vh;
+        margin: 35px 10px;
+    }
+
+    article h2
+    {
+        width: 90%;
+        border-bottom: 1px dashed #dcae1d;
+        text-align: center;
+    }
+
+    article p 
+    {
+        font-size: .9em;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    article ul
+    {
+        padding-left: 18%;
+    }
+
+    .separador
+    {
+        display: none;
+    }
+
+    /* CONTRATAR */
+    .contratar
+    {
+        right: 50%;
+        top: 10%;
+        width: 30%;
+        height: 8%;
+    }
+    
+    /* BOTON PARA ACTIVAR GALERIA */
+    .galeria
+    {
+        right: 85%;
+        top: 10%;
+        width: 10%;
+        height: 8%;
+    }
+        
+    /* GALERIA */
+    .galeria-grid
+    {
+        display: none;
+        width: 70%;
+        height: 23%;
+        margin: 0 5%;
+        z-index: 10;
+        position: fixed;
+    }
+
+    .galeria-grid img
+    {
+        margin: 3%;
+    }
+    
+    .activo
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
   
 @media (max-width: 420px) 

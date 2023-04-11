@@ -360,6 +360,21 @@ body
         }
     }
 
+    @media (max-width: 770px)
+    {
+        .calendario
+        {
+            width: 80%;
+            height: 58%;
+            bottom: 15%;
+            left: 10%;
+        }
+        .form .submit
+        {
+            margin-bottom: 10%;
+        }
+    } 
+
     @media (max-width: 420px) 
     {
         /* MENU DE NAVEGACION */

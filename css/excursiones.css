@@ -534,6 +534,19 @@ body
     }
 }
 
+@media (max-width: 770px) 
+{
+    .container div:first-child
+    {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        height: 8%;
+        margin: 12% 7%;
+    }
+}
+
 @media (max-width: 420px)
 {
     nav
