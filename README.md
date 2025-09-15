@@ -1,5 +1,5 @@
 # New World Travels
-Este es mi primer proyecto de desarrollo web, una página para una agencia de viajes creada con HTML, CSS y JavaScript. La idea principal es ofrecer información sobre destinos turísticos, paquetes de viaje y permitir a los usuarios explorar diferentes opciones para sus próximas vacaciones con una simulación de calendario y reserva.
+Mi primer proyecto de desarrollo web, una página para una agencia de viajes creada con HTML, CSS y JavaScript. La idea principal es ofrecer información sobre destinos turísticos, paquetes de viaje y permitir a los usuarios explorar diferentes opciones para sus próximas vacaciones con una simulación de calendario y reserva.
 
 ## Tecnologías Utilizadas
 
